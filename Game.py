@@ -17,11 +17,11 @@ env = Soph(state)
 win = pygame.display.set_mode((820, 720))
 graphics = Graphics(win)
 
-#layer1 = HumanAgent(env, player=1, graphics=graphics)  
+player1 = HumanAgent(env, player=1, graphics=graphics)  
 # player1 = MinMax(env, player=1, depth=3)  
 #player1 = Random_Agent(env, player=1) 
 # player1 = AlphaBeta(env, player=1, depth=4)
-player1=DQN_Agent(env=env, player=1, train= False, parametes_path="Data/params_3.pth")   
+#player1=DQN_Agent(env=env, player=1, train= False, parametes_path="Data/params_3.pth")   
   
 #player2 = HumanAgent(env, player=2, graphics=graphics)  
 player2 = Random_Agent(env, player=2)
